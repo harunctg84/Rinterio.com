@@ -33,8 +33,8 @@
 <body class="font manrope">
     <div class="navbar bg-base-100 w-11/12 mx-auto" >
   <div class="navbar-start">
-    <i class="fa-solid fa-arrow-right -rotate-45 bg-green-300 rounded-full text-xl p-1"></i>
-    <a class="btn btn-ghost text-xl"> Rinterio</a>
+    <i class="fa-solid fa-arrow-right -rotate-45 bg-green-300 p-2 rounded-full"></i>
+    <a class="btn btn-ghost text-2xl font-bold"> Rinterio</a>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1 text-lg">
@@ -45,10 +45,13 @@
         <li><a>Contact</a></li> 
     </ul>
   </div>
-  <div class="navbar-end gap-5">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <i class="fa-solid fa-cart-shopping"></i>
-    <a class="btn bg-green-400" >Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white rounded-full text-xl p-2"></i></a>
+  <div class="navbar-end gap-5 ">
+    <div class="hidden lg:block">
+        <i class="fa-solid fa-magnifying-glass text-slate-300 bg-white border-2 p-2 rounded-full"></i>
+        <i class="fa-solid fa-cart-shopping text-slate-300 bg-white border-2 p-2 rounded-full
+        "></i>
+        <a class="btn bg-green-400" >Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-2 rounded-full"></i></a>
+    </div>
     <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
              <i class="fa-solid fa-bars"></i>
@@ -69,11 +72,46 @@
    <section class="py-5">
     <div class="w-11/12 mx-auto flex flex-col items-center">
         <img src="assets/banner.png" alt="">
-        <h1 class="text-5xl w-8/12 font-bold text-center">A barn house of this design has a  <br>striking appearanc</h1>
+        <h1 class="text-5xl w-8/12 font-bold text-center">A barn house of this design has a  striking appearanc</h1>
         <p class="text-center w-8/12 py-3">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
         <button class="border-2 py-2 px-8 border-green-400 bg-green-100 rounded-3xl text-2xl font-medium">View Details  <i class="fa-solid fa-arrow-right -rotate-45 bg-green-400 rounded-full text-xl p-1"></i></button>
     </div>
    </section>
+   <!-- about section -->
+    <section class="bg-slate-400 h-full  relative">
+        <div class="absolute left-5 mb-[50px]">
+            <img src="assets/Vector.png" alt="" class="mt-6 ml-5">
+        </div>
+        <!-- content area -->
+        <div class=" lg:flex w-11/12 mx-auto pt-20 pb-6 justify-evenly">
+            <div>
+                <button class="bg-white border-2 rounded-xl px-5 mb-4"><i class="fa-solid fa-arrow-right pr-2"></i>About us</button>
+                <h2 class="text-4xl font-bold mb-3">We design thoughtful,<br>liveable space</h2>
+                <p>The barn house captivates with its blend of rustic charm and <br>
+                     modern sophistication, featuring weathered wood, sleek metal accents</p>
+                    <div class="flex bg-white rounded-xl p-6 mt-3">
+                        <img src="assets/commercial.png" alt="">
+                        <div class="ml-4">
+                            <h2 class="font-bold text-xl">Commercial</h2>
+                            <p>The barn house captivates with its blend 
+                            <br> of rustic charm and modern</p>
+                        </div>
+                    </div>
+                    <div class="flex bg-white rounded-xl p-6 mt-3">
+                        <img src="assets/residential.png" alt="">
+                        <div class="ml-4">
+                            <h2 class="font-bold text-xl">Residential</h2>
+                            <p>The barn house captivates with its blend 
+                            <br> of rustic charm and modern</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="mt-5 w-[450px]">
+                <img src="assets/Rectangle.png" alt="">
+            </div>
+        </div>
+        
+    </section>
 
 
     
