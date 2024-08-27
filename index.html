@@ -15,22 +15,13 @@
 
     <title>Rinterio.com</title>
     <!-- tailwind css configaration -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              },
-              fontFamily:{
-                manrope: "Manrope",
-              }
-            }
-          }
-        }
-      </script>
+    <style>
+      .manrope{
+        font-family: "Manrope",
+      }
+    </style>
 </head>
-<body class="font manrope">
+<body class="manrope">
     <div class="navbar bg-base-100 w-11/12 mx-auto" >
   <div class="navbar-start">
     <i class="fa-solid fa-arrow-right -rotate-45 bg-[#abef5f] p-2 rounded-full"></i>
@@ -38,19 +29,19 @@
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1 text-lg">
-        <li><a>Home</a></li>
-        <li><a>Service</a></li>
-        <li><a>Portfolio</a></li>
-        <li><a>Blog</a></li>
-        <li><a>Contact us</a></li> 
-    </ul>
+        <li><a >Home</a></li>
+        <li><a class="text-slate-300">Service</a></li>
+        <li><a class="text-slate-300">Portfolio</a></li>
+        <li><a class="text-slate-300">Blog</a></li>
+        <li><a class="text-slate-300">Contact us</a></li> 
+    </ul> 
   </div>
   <div class="navbar-end gap-5 ">
     <div class="hidden lg:block">
         <i class="fa-solid fa-magnifying-glass text-slate-300 bg-white border-2 p-2 rounded-full"></i>
         <i class="fa-solid fa-cart-shopping text-slate-300 bg-white border-2 p-2 rounded-full
         "></i>
-        <a class="btn bg-[#abef5f]" >Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-2 rounded-full"></i></a>
+        <a class="btn bg-[#abef5f] font-bold text-[18px]" >Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-2 rounded-full"></i></a>
     </div>
     <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -60,10 +51,10 @@
           tabindex="0"
           class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadown right-0">
           <li><a>Home</a></li>
-          <li><a>Service</a></li>
-          <li><a>Portfolio</a></li>
-          <li><a>Blog</a></li>
-          <li><a>Contact</a></li>
+          <li class=" text-slate-300"><a>Service</a></li>
+          <li class=" text-slate-300"><a>Portfolio</a></li>
+          <li class=" text-slate-300"><a>Blog</a></li>
+          <li class=" text-slate-300"><a>Contact</a></li>
         </ul>
       </div>
   </div>
@@ -168,7 +159,7 @@
                     <button class="font-semibold text-2xl mt-8">View Detail <i class="fa-solid fa-arrow-right -rotate-45 bg-[#abef5f] p-2 rounded-full"></i></button>
                 </div>
              </div>
-            <div class=" px-3 py-3 border-2 rounded-md mb-5 w-[340px] ml-[15px]  ">
+            <div class=" px-3 py-3 border-2 rounded-md mb-5 lg:w-[340px]  mx-auto ml-[15px] w-[300px] ">
               <img src="assets/img2.png" alt="">
             </div>
        </div>
@@ -178,7 +169,7 @@
             <img src="assets/img3.png " alt="">
           </div>
         </div>
-              <div class="bg-white w-[540px] px-4 py-3 border-2 rounded-md mb-5  lg:flex gap-5 justify-start">
+              <div class="bg-white  lg:w-[560px] w-8/12 mx-auto  px-4 py-3 border-2 rounded-md mb-5  lg:flex gap-5 justify-start">
                 <img src="assets/img4.png" alt="">
                   <div>
                     <h3 class="font-bold  text-3xl mb-5">Commercial</h3>
@@ -194,7 +185,7 @@
        </div>
      </section>
      <!-- Input form section -->
-      <section class=" bg-[#d8cbcb]">
+      <section class="bg-[url('./assets/bg.jpg')] bg-center w-full">
         <div class="w-10/12 mx-auto  py-11 text-center" >
           <button class="bg-white border-2 rounded-xl px-5 mb-4"><i class="fa-solid fa-arrow-right pr-2"></i> Let s Connect</button>
           <h2 class="text-4xl font-bold mb-5">Let s Discuss Next Project</h2>
@@ -227,8 +218,8 @@
                     class="input input-bordered input-lg w-full max-w-xs my-4" />
                     </div>
                  </div>
-                 <textarea class="textarea lg:px-[275px] lg:py-[50px] py-[50px] px-[100px] mb-6" placeholder="Write your message here" ></textarea><br>
-                 <button ><a class=" bg-[#abef5f] lg:px-[282px] py-5 rounded-3xl px-[100px]" >Send Email<i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-2 rounded-full ml-3"></i></a></button>
+                 <textarea class="textarea lg:px-[270px] lg:py-[50px] py-[50px] px-[100px] mb-6" placeholder="Write your message here" ></textarea><br>
+                 <button ><a class=" bg-[#abef5f] lg:px-[270px] py-4 rounded-3xl px-[90px] font-bold text-2xl" >Send Email<i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-2 rounded-full ml-3"></i></a></button>
                  
 
               
@@ -244,7 +235,7 @@
             <a class="btn btn-ghost text-3xl font-bold"> Rinterio</a>
           </button>
 
-          <p class="text-[#7c7070]">The barn house captivates with its blend of rustic charm and modern sophistication, 
+          <p class="text-[#9b8b8b]">The barn house captivates with its blend of rustic charm and modern sophistication, 
             <br>featuring weathered wood, sleek metal accents.</p>
             <div>
               <ul class=" lg:flex  justify-around  py-6 text-lg gap-3 ">
